@@ -1,0 +1,5 @@
+print("=" * 50)
+print("🚀 Welcome to CivilFlow Core")
+print("Version: 0.1.0")
+print("Environment: Development")
+print("=" * 50)
