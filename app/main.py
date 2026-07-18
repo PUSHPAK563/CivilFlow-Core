@@ -1,6 +1,7 @@
 from excel.importer import load_excel
 from validation.validator import validate_project
 from research.company_search import search_company
+from research.scraper import extract_company_info
 
 
 def main():
@@ -18,13 +19,20 @@ def main():
         print("Validation Failed:")
         for error in errors:
             print("-", error)
+
     else:
         print("Validation Successful!")
         print("Project data is ready.")
 
         # Day 3 - Research Engine
         company = input("\nEnter company name to research: ")
+
         search_company(company)
+
+        company_info = extract_company_info(company)
+
+        print("\nCompany Information:")
+        print(company_info)
 
 
 if __name__ == "__main__":
