@@ -1,7 +1,7 @@
 from app.ai.company_analyzer import CompanyAnalyzer
 
 company = {
-    "company_name": "Lendlease Australia",
+    "company_name": "Maytree studios",
     "industry": "Construction",
     "services": [
         "Construction",
