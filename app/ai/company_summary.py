@@ -1,30 +1,16 @@
 """
 CivilFlow AI
 Company Summary Generator
-
-Generates a structured business summary from analysed
-company research data.
 """
 
 
 class CompanySummaryGenerator:
-    """Generate professional company summaries."""
+    """
+    Generates a professional company summary
+    from researched company information.
+    """
 
     def generate(self, company: dict) -> dict:
-        """
-        Generate a structured summary.
-
-        Parameters
-        ----------
-        company : dict
-            Company information collected from the Research Engine.
-
-        Returns
-        -------
-        dict
-            Structured company summary.
-        """
-
         company_name = company.get("company_name", "Unknown Company")
         industry = company.get("industry", "Unknown Industry")
         location = company.get("location", "Unknown Location")
@@ -39,26 +25,17 @@ class CompanySummaryGenerator:
             "company": company_name,
             "industry": industry,
             "location": location,
-
             "company_profile": (
                 f"{company_name} operates in the {industry} industry and "
                 f"provides {', '.join(services)} services."
             ),
-
             "industry_position":
                 "Established organisation with strong construction capabilities.",
-
             "construction_relevance":
                 f"Actively involved in {', '.join(projects)} projects.",
-
             "digital_relevance":
                 f"Uses {', '.join(technology)} with {digital_maturity} digital maturity.",
-
             "collaboration_opportunity":
-                (
-                    "Strong potential for BIM coordination, "
-                    "Civil 3D drafting, documentation support "
-                    "and remote engineering collaboration."
-                )
+                "Strong potential for BIM coordination, Civil 3D drafting, "
+                "documentation support and remote engineering collaboration."
         }
-    
