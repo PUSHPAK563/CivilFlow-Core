@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 .venv/
 leads.txt
+
+# Generated Reports
+Company_Report.pdf
+CivilFlow_Leads.xlsx
